@@ -21,6 +21,7 @@ namespace WinServiceNet46
 
         protected override void OnStop()
         {
+            JobHelper.QuartzShutdown(false);
             log.Info("WinServiceNet46 Stoped");
         }
     }
